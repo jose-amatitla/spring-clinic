@@ -7,12 +7,7 @@
   </parent>
   <artifactId>spring-clinic-web</artifactId>
   
-  <dependencies>
-  		<dependency>
-    		<groupId>com.spring.clinic</groupId>
-    		<artifactId>spring-clinic-data</artifactId>
-    		<version>0.0.2-SNAPSHOT</version>  		
-  		</dependency>  
+  <dependencies>  
  		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
@@ -34,6 +29,11 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
-		</dependency>				 
+		</dependency>			
+		<dependency>
+			<groupId>com.spring.clinic</groupId>
+			<artifactId>spring-clinic-data</artifactId>
+			<version>0.0.2-SNAPSHOT</version>
+		</dependency>						 
   </dependencies>
 </project>

@@ -3,23 +3,22 @@ package com.spring.clinic.springclinic.bootstrap;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
-import com.spring.clinic.model.Owner;
-import com.spring.clinic.model.Vet;
-import com.spring.clinic.service.OwnerService;
-import com.spring.clinic.service.VetService;
-import com.spring.clinic.service.mapimpl.OwnerServiceMapImpl;
-import com.spring.clinic.service.mapimpl.VetServiceMapImpl;
+import com.spring.clinic.springclinic.model.Owner;
+import com.spring.clinic.springclinic.model.Vet;
+import com.spring.clinic.springclinic.service.OwnerService;
+import com.spring.clinic.springclinic.service.VetService;
 
 @Component
 public class DataLoader implements CommandLineRunner{
     private final OwnerService ownerService;
     private final VetService vetService;
 	
-    public DataLoader() {
-		this.ownerService = new OwnerServiceMapImpl();
-		this.vetService = new VetServiceMapImpl();
-    }    
-    
+	public DataLoader(OwnerService ownerService, VetService vetService) {
+		super();
+		this.ownerService = ownerService;
+		this.vetService = vetService;
+	}
+
 	@Override
 	public void run(String... args) throws Exception {
             loadData();

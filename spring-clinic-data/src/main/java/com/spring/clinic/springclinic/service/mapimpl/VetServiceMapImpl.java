@@ -1,10 +1,13 @@
-package com.spring.clinic.service.mapimpl;
+package com.spring.clinic.springclinic.service.mapimpl;
 
 import java.util.Set;
 
-import com.spring.clinic.model.Vet;
-import com.spring.clinic.service.VetService;
+import org.springframework.stereotype.Service;
 
+import com.spring.clinic.springclinic.model.Vet;
+import com.spring.clinic.springclinic.service.VetService;
+
+@Service
 public class VetServiceMapImpl extends AbstractMapService<Vet, Long> implements VetService{
     @Override
     public Set<Vet> findAll() {

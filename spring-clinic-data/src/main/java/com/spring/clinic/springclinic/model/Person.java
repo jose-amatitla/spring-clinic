@@ -1,4 +1,4 @@
-package com.spring.clinic.model;
+package com.spring.clinic.springclinic.model;
 
 public class Person extends BaseEntity{
 	/**

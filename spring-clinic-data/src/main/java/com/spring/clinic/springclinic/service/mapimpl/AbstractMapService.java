@@ -1,4 +1,4 @@
-package com.spring.clinic.service.mapimpl;
+package com.spring.clinic.springclinic.service.mapimpl;
 
 import java.util.Collections;
 import java.util.HashMap;
@@ -7,7 +7,7 @@ import java.util.Map;
 import java.util.NoSuchElementException;
 import java.util.Set;
 
-import com.spring.clinic.model.BaseEntity;
+import com.spring.clinic.springclinic.model.BaseEntity;
 
 public abstract class AbstractMapService<T extends BaseEntity, ID extends Long> {
 	

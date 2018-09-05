@@ -1,4 +1,4 @@
-package com.spring.clinic.service;
+package com.spring.clinic.springclinic.service;
 
 import java.util.Set;
 

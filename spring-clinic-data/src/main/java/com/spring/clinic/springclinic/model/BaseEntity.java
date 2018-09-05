@@ -1,4 +1,4 @@
-package com.spring.clinic.model;
+package com.spring.clinic.springclinic.model;
 
 import java.io.Serializable;
 

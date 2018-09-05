@@ -1,11 +1,41 @@
 package com.spring.clinic.service.mapimpl;
 
-import com.spring.clinic.model.Owner;
+import java.util.Set;
 
-public class OwnerServiceMapImpl extends AbstractMapService<Owner, Long> {
+import com.spring.clinic.model.Owner;
+import com.spring.clinic.service.OwnerService;
+
+public class OwnerServiceMapImpl extends AbstractMapService<Owner, Long> implements OwnerService {
+
+	@Override
+    public Set<Owner> findAll() {
+        return super.findAll();
+    }
+
+    @Override
+    public Owner findById(Long id) {
+        return super.findById(id);
+    }
 	
 	@Override
-	public Owner save(Owner owner) {
-		return super.save(owner.getId(), owner);
+	public Owner save(Owner object) {
+		// TODO Auto-generated method stub
+		return super.save(object.getId(), object);
 	}
+
+	@Override
+	public void delete(Owner object) {
+		super.delete(object);
+	}
+	 
+	@Override
+	public void deleteById(Long id) {
+		super.deleteById(id);
+	}	
+	
+	@Override
+	public Owner findByLastName(String lastName) {
+		// TODO Auto-generated method stub
+		return null;
+	}	
 }

@@ -1,4 +1,4 @@
-package model;
+package com.spring.clinic.model;
 
 public class Pet {
 	private String name;

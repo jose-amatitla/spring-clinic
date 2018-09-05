@@ -1,6 +1,10 @@
 package com.spring.clinic.model;
 
-public class Pet {
+public class Pet extends BaseEntity{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private String name;
 	private Owner owner;
 	private PetType petType;

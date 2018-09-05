@@ -3,7 +3,7 @@
   <parent>
     <groupId>com.spring.clinic</groupId>
     <artifactId>spring-clinic</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.2-SNAPSHOT</version>
   </parent>
   <artifactId>spring-clinic-data</artifactId>
   <name>clinic-data</name>
@@ -50,4 +50,8 @@
 		</plugins>
 	</build>
   
+
+  <scm>
+    <tag>spring-clinic-data-0.0.1</tag>
+  </scm>
 </project>

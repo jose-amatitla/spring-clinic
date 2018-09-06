@@ -1,5 +1,7 @@
 package com.spring.clinic.springclinic.model;
 
+import java.time.LocalDate;
+
 public class Pet extends BaseEntity{
 	/**
 	 * 
@@ -7,6 +9,7 @@ public class Pet extends BaseEntity{
 	private static final long serialVersionUID = 1L;
 	private String name;
 	private Owner owner;
+	private LocalDate birthDate;	
 	private PetType petType;
 	
 	public String getName() {
@@ -21,6 +24,15 @@ public class Pet extends BaseEntity{
 	public void setOwner(Owner owner) {
 		this.owner = owner;
 	}
+	
+	public LocalDate getBirthDate() {
+		return birthDate;
+	}
+	
+	public void setBirthDate(LocalDate birthDate) {
+		this.birthDate = birthDate;
+	}
+	
 	public PetType getPetType() {
 		return petType;
 	}

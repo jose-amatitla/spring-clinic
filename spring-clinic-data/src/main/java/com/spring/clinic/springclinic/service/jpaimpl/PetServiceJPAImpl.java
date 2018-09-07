@@ -45,7 +45,6 @@ public class PetServiceJPAImpl implements PetService {
 
 	@Override
 	public void deleteById(Long id) {
-		petRepository.deleteById(id)
+		petRepository.deleteById(id);
 	}
-
 }
